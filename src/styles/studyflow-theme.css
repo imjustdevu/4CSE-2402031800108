@@ -1,0 +1,98 @@
+/* StudyFlow Custom Theme - Soft Blue & Mint Palette */
+:root {
+  /* Primary Colors - Soft Blue */
+  --sf-blue-50: #f0f7ff;
+  --sf-blue-100: #e0f0ff;
+  --sf-blue-200: #bae0ff;
+  --sf-blue-300: #7cc5ff;
+  --sf-blue-400: #3da9ff;
+  --sf-blue-500: #0089ff;
+  --sf-blue-600: #006fd6;
+  --sf-blue-700: #0058ad;
+  --sf-blue-800: #004a8f;
+  --sf-blue-900: #003d75;
+  
+  /* Secondary Colors - Mint Green */
+  --sf-mint-50: #f0fdf9;
+  --sf-mint-100: #ccfbef;
+  --sf-mint-200: #99f6e0;
+  --sf-mint-300: #5fe9d0;
+  --sf-mint-400: #2dd4bf;
+  --sf-mint-500: #14b8a6;
+  --sf-mint-600: #0d9488;
+  --sf-mint-700: #0f766e;
+  --sf-mint-800: #115e59;
+  --sf-mint-900: #134e4a;
+  
+  /* Neutral Colors */
+  --sf-gray-50: #f8fafc;
+  --sf-gray-100: #f1f5f9;
+  --sf-gray-200: #e2e8f0;
+  --sf-gray-300: #cbd5e1;
+  --sf-gray-400: #94a3b8;
+  --sf-gray-500: #64748b;
+  --sf-gray-600: #475569;
+  --sf-gray-700: #334155;
+  --sf-gray-800: #1e293b;
+  --sf-gray-900: #0f172a;
+  
+  /* Subject Colors */
+  --sf-subject-math: #8b5cf6;
+  --sf-subject-science: #0089ff;
+  --sf-subject-english: #f59e0b;
+  --sf-subject-history: #ef4444;
+  --sf-subject-art: #ec4899;
+  --sf-subject-cs: #10b981;
+  
+  /* Status Colors */
+  --sf-success: #10b981;
+  --sf-warning: #f59e0b;
+  --sf-error: #ef4444;
+  --sf-info: #0089ff;
+  
+  /* Background */
+  --sf-bg-primary: #fafcff;
+  --sf-bg-secondary: #f0f7ff;
+  --sf-bg-card: #ffffff;
+  
+  /* Shadows */
+  --sf-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --sf-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --sf-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --sf-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+/* Custom utility classes */
+.sf-card {
+  background: var(--sf-bg-card);
+  border-radius: 1rem;
+  box-shadow: var(--sf-shadow-md);
+}
+
+.sf-card-hover {
+  transition: all 0.3s ease;
+}
+
+.sf-card-hover:hover {
+  box-shadow: var(--sf-shadow-lg);
+  transform: translateY(-2px);
+}
+
+.sf-gradient-blue {
+  background: linear-gradient(135deg, var(--sf-blue-400) 0%, var(--sf-blue-600) 100%);
+}
+
+.sf-gradient-mint {
+  background: linear-gradient(135deg, var(--sf-mint-400) 0%, var(--sf-mint-600) 100%);
+}
+
+.sf-gradient-hero {
+  background: linear-gradient(135deg, #e0f0ff 0%, #ccfbef 100%);
+}
+
+.sf-text-gradient {
+  background: linear-gradient(135deg, var(--sf-blue-500) 0%, var(--sf-mint-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
